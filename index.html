@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title centered">Weather Dashboard</h1>
+    </header>
+
+    <main>
+      <div class="grid-container">
+        <!-- left-column -->
+        <section class="left-column" id="search-section">
+          <form id="search-form">
+            <h2 id="search-bar-title">Search for a City:</h2>
+            <input id="search-input" type="text" /><button id="search-btn">
+              <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+            </button>
+          </form>
+          <p id="search-error-message"></p>
+          <!-- Search history list -->
+          <ul id="search-history"></ul>
+        </section>
+
+        <!-- right column -->
+        <section class="right-column" id="results-section">
+          <!-- current weather -->
+          <div id="city-section">
+            <h2 id="city-name"></h2>
+            <h2 id="current-date"></h2>
+            <img id="current-weather-icon" />
+            <ul id="weather-list">
+              <li id="current-temperature" class="weather-list-item"></li>
+              <li id="current-humidity" class="weather-list-item"></li>
+              <li id="current-wind-speed" class="weather-list-item"></li>
+              <li id="current-uv-index" class="weather-list-item">
+                UV Index: <span id="current-uv-index-value"></span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- weather forcast -->
+          <div id="forecast-section">
+            <h3 id="forecast-title">5-Day Forecast:</h3>
+            <ul id="forecast-cards-list"></ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="https://use.fontawesome.com/ae7c216a3a.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
