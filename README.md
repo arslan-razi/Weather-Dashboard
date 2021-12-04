@@ -23,7 +23,7 @@
 ## Mock-Up
 The following image shows the web application's appearance and functionality:
 
-![weather dashboard demo](./assets/images/weatherDashboard.png)
+![weather dashboard demo](./assets/images/weatherDashboard.jpg)
 
 ## link to deployed application
 
